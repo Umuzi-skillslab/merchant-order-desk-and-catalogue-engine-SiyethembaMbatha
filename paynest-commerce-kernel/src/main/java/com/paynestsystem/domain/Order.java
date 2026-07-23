@@ -67,6 +67,6 @@ public class Order {
     }
 
     private static String formatRand(double amount) {
-        return String.format("R%,.2f", amount);
+        return String.format(java.util.Locale.US, "R%,.2f", amount);
     }
 }
