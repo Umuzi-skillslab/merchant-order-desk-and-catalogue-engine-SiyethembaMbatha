@@ -8,7 +8,7 @@ as a readable receipt.
 ## How to run the demo
 
 ```bash
-cd paynest
+cd paynest-commerce-kernel
 mvn compile exec:java
 
 
