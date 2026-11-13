@@ -1,5 +1,7 @@
 package com.paynestsystem.domain;
 
+import java.math.BigDecimal;
+
 public class OrderItem {
 
     private final Product product;
@@ -24,8 +26,8 @@ public class OrderItem {
         return quantity;
     }
 
-    public double calculateTotal() {
-        return product.getPrice() * quantity;
+    public BigDecimal calculateTotal() {
+        return product.getPrice().multiply(BigDecimal.valueOf(quantity));
     }
 
     @Override
